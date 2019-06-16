@@ -1,0 +1,6 @@
+- name: Create a new database with name 'bobdata'
+  mysql_db:
+    name: bobdata
+    state: present
+
+# Copy database dump file to remote host and restore it to database 'my_db'
